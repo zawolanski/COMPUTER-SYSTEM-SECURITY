@@ -1,0 +1,17 @@
+{
+  "name": "ascii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start -s -f '*.html, dist/**/*'",
+    "start": "parallelshell 'npm run browser-sync' 'tsc -w'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "parallelshell": "^3.0.1"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wordToEncrypt {
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Konwertowanie słowa na znaki binarne i ascii</h2>
+    <div>
+      <label for="decimalWord">Wpisz słowo:</label>
+      <input id="decimalWord" type="text" />
+      <button class="decimalBtn">Konwertuj</button>
+      <div class="binaryOutput"></div>
+      <div class="asciiOutput"></div>
+    </div>
+
+    <h2>Szyfr cezara z przesucięciem 5</h2>
+    <p>Przykładowy ciąg: GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.</p>
+    <div>
+      <div>
+        <label for="caesarWord">Wpisz słowo:</label>
+        <input id="caesarWord" type="text" />
+      </div>
+      <div>
+        <label for="caesarShift">Przesunięsie:</label>
+        <input id="caesarShift" type="number" value="13" />
+      </div>
+      <button class="caesarBtn">Szyfruj</button>
+      <div class="caesarOutput"></div>
+    </div>
+
+    <h2>Szyfr Atbasz:</h2>
+    <div>
+      <label for="atbaszWord">Wpisz słowo:</label>
+      <input id="atbaszWord" type="text" />
+      <button class="atbaszBtn">Szyfruj</button>
+      <div class="atbaszOutput"></div>
+    </div>
+
+    <h2>Szyfr Macierzowy:</h2>
+    <div>
+      <p>komputery ---> kpeourmty</p>
+      <p>informacja ---> irj nma fa oc</p>
+      <label for="matrixWord">Wpisz słowo:</label>
+      <input id="matrixWord" type="text" />
+      <button class="matrixBtn">Szyfruj</button>
+      <div class="matrixOutput"></div>
+    </div>
+  </body>
+
+  <script src="./index.js" type="module"></script>
+</html>
